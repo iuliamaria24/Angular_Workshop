@@ -1,0 +1,41 @@
+<p class="titel"> My Homework</p>
+<div class="typepipes">
+    <p>Types pipes: </p>
+    <ol>
+<li style="color: rgb(68, 14, 218);"> Uppercase:</li>
+<p> efgh -> {{txtUperCase | uppercase }}</p>
+<li style="color: rgb(68, 14, 218);">Lowercase:</li>
+<p> ABCD -> {{ txtLowercase | lowercase }}</p>
+<li style="color: rgb(68, 14, 218);">Slice:</li>
+<p>Name is: {{txtSplice}}</p>
+<p>Nickname: {{ txtSplice | slice : 0 : 3 }}</p>
+<li style="color: rgb(68, 14, 218);">ShortDates</li>
+<p>CurrentDate is: {{currentDate }}</p>
+<p>ShortCurrentDate is: {{currentDate | date :'shortDates' }}</p>
+</ol>
+</div>
+<p style="color: rgb(68, 14, 218);">Use uppercase on list :</p>    
+
+<p>Animals :</p>
+<ul>
+<li *ngFor="let element of people; let i=index; let odd=odd;" >
+    <p> {{element.name | uppercase}} </p>
+</li> 
+</ul>
+<p>List of people : </p>
+<ul>
+    <div *ngFor = "let element of people; let i=index; let e = even">
+        {{i}} {{element.name}}
+    </div>
+</ul>
+
+<p>Elements with an even index :</p>
+<ul>
+<div *ngFor="let item of people; let i = index ">
+    <div *ngIf="i % 2 == 0">
+        {{i}}  {{ item.name }} 
+    </div>
+  </div>
+</ul>
+
+<p>Number is: {{ mer | concatenateTwoStrings : es}}</p>
