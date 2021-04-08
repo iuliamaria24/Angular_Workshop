@@ -8,9 +8,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ConcatenateTwoStringsPipe implements PipeTransform {
 
-  transform(value: string, addedValue?: string): string {
-    let str3;
-    return str3=value.concat(addedValue.toString());
+  transform(first: string, second:string): string {
+    
+    return  first.concat(second);
 
   }
 
