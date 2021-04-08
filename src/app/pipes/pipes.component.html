@@ -1,13 +1,13 @@
-<p class="titel"> My Homework</p>
+<p appHighlight class="titel"> My Homework</p>
 <div class="typepipes">
-    <p>Types pipes: </p>
+    <p [appHighlight]="color">Types pipes: </p>
     <ol>
 <li style="color: rgb(68, 14, 218);"> Uppercase:</li>
 <p> efgh -> {{txtUperCase | uppercase }}</p>
 <li style="color: rgb(68, 14, 218);">Lowercase:</li>
 <p> ABCD -> {{ txtLowercase | lowercase }}</p>
 <li style="color: rgb(68, 14, 218);">Slice:</li>
-<p>Name is: {{txtSplice}}</p>
+<p [appColorTextDirective]>Name is: {{txtSplice}}</p>
 <p>Nickname: {{ txtSplice | slice : 0 : 3 }}</p>
 <li style="color: rgb(68, 14, 218);">ShortDates</li>
 <p>CurrentDate is: {{currentDate }}</p>
@@ -37,5 +37,6 @@
     </div>
   </div>
 </ul>
-
+<p >Highlight me!</p>
+<p >Highlight me!</p>
 <p>Concatenate string is: {{ 'Mc' | concatenateTwoStrings : 'Donalds' }}</p>

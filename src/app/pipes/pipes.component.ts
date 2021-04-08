@@ -10,6 +10,7 @@ export class PipesComponent implements OnInit {
   txtUperCase:string = 'efgh';
   txtSplice:string = "Leonardo";
   txtLowercase ="ABCD";
+  color = 'yellow';
   array= ['dog','cat','frog','pig'];
   people:any[]=[
     {

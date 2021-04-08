@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PipesComponent } from './pipes/pipes.component';
 import { ConcatenateTwoStringsPipe } from './concatenate-two-strings.pipe';
+import { HighlightDirective } from './highlight.directive';
+import { ColorTextDirective } from './color-text.directive';
 
 
 
@@ -15,6 +17,8 @@ import { ConcatenateTwoStringsPipe } from './concatenate-two-strings.pipe';
   AppComponent,
   PipesComponent,
   ConcatenateTwoStringsPipe,
+  HighlightDirective,
+  ColorTextDirective,
   
     
   ],
