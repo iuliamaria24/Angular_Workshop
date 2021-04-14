@@ -21,7 +21,7 @@ export class ColorTextDirective {
   }
 
   private changColorText(color: string) {
-    this.el.nativeElement.style.colorText = color;
+    this.el.nativeElement.style.color = color;
   }
 
 }

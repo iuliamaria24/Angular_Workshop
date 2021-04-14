@@ -8,7 +8,10 @@ import { PipesComponent } from './pipes/pipes.component';
 import { ConcatenateTwoStringsPipe } from './concatenate-two-strings.pipe';
 import { HighlightDirective } from './highlight.directive';
 import { ColorTextDirective } from './color-text.directive';
-
+import { AccountDetailComponent } from './account-detail/account-detail.component';
+import { HomeComponent } from './home/home.component';
+import {MatInputModule} from '@angular/material/input';
+import { MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -19,6 +22,8 @@ import { ColorTextDirective } from './color-text.directive';
   ConcatenateTwoStringsPipe,
   HighlightDirective,
   ColorTextDirective,
+  AccountDetailComponent,
+  HomeComponent,
   
     
   ],
