@@ -1,0 +1,21 @@
+<mat-card class="add-note-card" *ngFor="let note of notes">
+
+<div class="text">
+<label class="idTitle">{{note.title}}</label>
+<label class="idDescription">{{note.description}}</label>
+</div>
+
+<div class="tools">
+<div class="toolsLeft">
+    <mat-icon>keyboard_backspace</mat-icon>
+    <mat-icon>star_half</mat-icon>
+    <mat-icon>check</mat-icon>
+</div>
+
+<div class="toolsRight">
+<mat-icon>delete</mat-icon>
+<mat-icon>edit</mat-icon>
+</div>
+</div>
+</mat-card>
+ 

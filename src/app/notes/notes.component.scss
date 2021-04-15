@@ -1,0 +1,39 @@
+.add-note-card {
+  max-width: 150px;
+  min-height: 150px;
+  margin: 10px;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  
+  }
+  .tools{
+    display: flex;
+    flex-direction: row; 
+  }
+  .toolsLeft{
+    margin-top: 90px;
+    align-items: left;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    margin-right: 20px;
+    justify-content:space-around;
+    
+  }
+  .toolsRight{
+    align-items: left;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    justify-content:space-around;
+
+  }
+  .text{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .idTitle{
+      font-style: bor;
+  }
