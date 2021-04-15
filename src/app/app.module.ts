@@ -10,10 +10,12 @@ import { HighlightDirective } from './highlight.directive';
 import { ColorTextDirective } from './color-text.directive';
 import { AccountDetailComponent } from './account-detail/account-detail.component';
 import { HomeComponent } from './home/home.component';
-import {MatInputModule} from '@angular/material/input';
+import { MatCardModule } from "@angular/material/card";
+import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule} from '@angular/material/form-field';
-
-
+import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,13 @@ import { MatFormFieldModule} from '@angular/material/form-field';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatCardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
